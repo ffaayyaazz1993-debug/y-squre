@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+
+{% block title %}{{ article.title }} | Y-SQRE{% endblock title %}
+
+{% block content %}
+<article class="article-page">
+    <header class="shell article-header">
+        <p class="eyebrow"><a href="/geopolitics/">Geopolitics</a> / <a href="/geopolitics/north-america/">{{ article.region }}</a></p>
+        <p class="category">{{ article.category }}</p>
+        <h1>{{ article.title }}</h1>
+        <p class="article-standfirst">{{ article.dek }}</p>
+        <div class="story-meta"><span>By {{ article.author }}</span><span>{{ article.read_time }}</span><span>Sample article</span></div>
+    </header>
+
+    <div class="shell article-layout">
+        <div class="article-body">
+            <p class="article-note">This is sample editorial content for the Y-SQRE prototype.</p>
+
+            <p class="article-opening">Humans love turning every tariff dispute into a prophecy about the end of civilization. Markets usually respond by panicking for three days and then demanding another earnings report. Still, geopolitics matters because money hates uncertainty almost as much as politicians enjoy creating it.</p>
+
+            <h2>Executive summary</h2>
+            <p>The United States and Canada share one of the world's largest bilateral economic relationships. Trade, energy cooperation, defence partnerships and financial integration have created a highly interconnected North American economy. However, recent geopolitical tensions involving trade policies, energy security, supply chains and strategic competition with global powers are influencing investor sentiment across traditional financial markets and digital assets.</p>
+            <p>As geopolitical dynamics evolve, investors are increasingly assessing how policy decisions in Washington and Ottawa may affect equity valuations, commodity markets and cryptocurrency adoption.</p>
+
+            <h2>Background</h2>
+            <p>The United States is Canada's largest trading partner, accounting for approximately three-quarters of Canadian exports. Under the framework of the United States-Mexico-Canada Agreement, both countries maintain deep economic integration across manufacturing, agriculture, technology and energy sectors.</p>
+            <p>Recent years have witnessed several developments affecting bilateral relations:</p>
+            <ul>
+                <li>Trade disputes involving tariffs and industrial subsidies</li>
+                <li>Growing competition for critical minerals</li>
+                <li>Energy transition policies</li>
+                <li>Supply-chain reshoring initiatives</li>
+                <li>Increasing defence cooperation within NATO</li>
+                <li>Strategic responses to China's economic influence</li>
+            </ul>
+            <p>These developments have created risks and opportunities for investors.</p>
+
+            <h2>Impact on stock markets</h2>
+
+            <h3>1. Energy sector beneficiaries</h3>
+            <p>Canada remains a major supplier of crude oil, natural gas and uranium to the United States. Any geopolitical event that threatens global energy supplies often strengthens demand for North American energy assets.</p>
+            <p>Potential beneficiaries include:</p>
+            <ul>
+                <li>Canadian oil producers</li>
+                <li>Pipeline operators</li>
+                <li>LNG infrastructure companies</li>
+                <li>Uranium mining firms</li>
+            </ul>
+            <p>Energy security concerns tend to support higher revenues and profitability for these sectors.</p>
+
+            <h3>2. Critical minerals and mining stocks</h3>
+            <p>Both governments are prioritizing domestic supply chains for strategic minerals such as lithium, nickel, cobalt, copper and rare earth elements. As electric vehicle manufacturing expands, Canadian mining companies may receive increased investment support, creating long-term growth opportunities.</p>
+
+            <h3>3. Technology and semiconductor industries</h3>
+            <p>North America is attempting to reduce dependence on foreign semiconductor supply chains. Government incentives and industrial policies may benefit semiconductor manufacturers, data-centre operators, artificial-intelligence firms and cybersecurity companies. However, stricter regulations and export controls can create short-term volatility.</p>
+
+            <h3>4. Banking and financial services</h3>
+            <p>The Canadian and American financial systems remain deeply connected. Geopolitical stability generally supports banking profitability, credit growth and capital-market activity. In contrast, trade disputes or recession risks may increase investor caution toward financial institutions.</p>
+
+            <h2>Impact on cryptocurrency markets</h2>
+
+            <h3>1. Flight to alternative assets</h3>
+            <p>Periods of geopolitical uncertainty often increase interest in decentralized assets. Some investors increasingly view Bitcoin as a hedge against monetary instability, a store of value and a non-sovereign financial asset. Escalating geopolitical tensions could stimulate capital flows into major cryptocurrencies.</p>
+
+            <h3>2. Regulatory developments</h3>
+            <p>The United States remains an influential jurisdiction for cryptocurrency regulation. Canadian regulators have generally adopted a structured approach toward crypto exchanges, exchange-traded funds and digital-asset custody. Clearer regulations in either country could encourage institutional adoption and increase market participation.</p>
+
+            <h3>3. Stablecoins and cross-border payments</h3>
+            <p>Given the substantial trade relationship between the United States and Canada, blockchain-based payment systems may gain traction as businesses seek faster settlements, reduced transaction costs and improved transparency. Stablecoins may become increasingly relevant in cross-border commercial transactions.</p>
+
+            <h3>4. Risk-off market reactions</h3>
+            <p>Not all geopolitical events benefit crypto. In severe market-stress scenarios, investors often move into cash, risk assets decline and crypto markets experience higher volatility. During several global crises, Bitcoin initially fell alongside equities before recovering.</p>
+
+            <h2>Future scenarios</h2>
+
+            <div class="scenario-card">
+                <h3>Scenario 1: Strengthened economic cooperation</h3>
+                <p>If Washington and Ottawa continue expanding trade, energy cooperation and critical-mineral partnerships, likely winners include energy stocks, industrial firms, mining companies and infrastructure projects. Crypto markets may benefit indirectly through improved investor confidence.</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>Scenario 2: Trade frictions and protectionism</h3>
+                <p>If industrial subsidies and tariff disputes intensify, potential effects include supply-chain disruptions, increased manufacturing costs and stock-market volatility. Cryptocurrencies may attract speculative inflows as investors seek alternative assets.</p>
+            </div>
+
+            <div class="scenario-card">
+                <h3>Scenario 3: Global geopolitical escalation</h3>
+                <p>A broader geopolitical crisis involving major powers could increase demand for safe-haven assets, strengthen commodity prices and create stock-market uncertainty. Bitcoin and gold may compete for investor attention as alternative stores of value.</p>
+            </div>
+
+            <h2>Investor takeaway</h2>
+            <p>The geopolitical relationship between the United States and Canada is becoming increasingly important as North America seeks greater economic resilience, energy security and technological independence.</p>
+            <p>For stock investors, sectors linked to energy, critical minerals, infrastructure and advanced technology appear well-positioned to benefit from long-term strategic cooperation.</p>
+            <p>For cryptocurrency investors, regulatory clarity and geopolitical uncertainty remain primary drivers influencing adoption and market sentiment.</p>
+            <p>While geopolitical developments can generate short-term volatility, they also create opportunities for investors capable of identifying structural shifts before they become widely recognized by the market.</p>
+            <p>In finance, the loudest headlines often predict disaster. The actual winners are usually the companies quietly selling oil, copper, software or server capacity while everyone else is busy arguing on television.</p>
+
+            <p class="article-disclaimer">This sample is for editorial demonstration only. It is not investment advice. Claims and figures should be independently sourced and updated before publication.</p>
+        </div>
+    </div>
+</article>
+{% endblock content %}

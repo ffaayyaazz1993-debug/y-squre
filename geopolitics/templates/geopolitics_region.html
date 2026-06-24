@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}{{ region.name }} Geopolitics | Y-SQRE{% endblock title %}
+
+{% block content %}
+<section class="section-page">
+    <div class="shell">
+        <p class="eyebrow"><a href="/geopolitics/">Geopolitics</a></p>
+        <h1>{{ region.name }}</h1>
+        {% if region.intro %}
+            <p class="section-page__intro">{{ region.intro }}</p>
+            <p class="section-page__dek">{{ region.dek }}</p>
+            <div class="coverage-grid">
+                {% for pillar in region.pillars %}
+                    <article>
+                        <p class="category">{{ pillar.label }}</p>
+                        <h2>{{ pillar.title }}</h2>
+                    </article>
+                {% endfor %}
+            </div>
+            {% if region.sample_article %}
+                <section class="sample-story">
+                    <p class="eyebrow">Sample Article</p>
+                    <p class="category">{{ region.sample_article.category }}</p>
+                    <h2>
+                        <a href="/geopolitics/north-america/{{ region.sample_article.slug }}/">
+                            {{ region.sample_article.title }}
+                        </a>
+                    </h2>
+                    <p>{{ region.sample_article.dek }}</p>
+                    <a class="text-link" href="/geopolitics/north-america/{{ region.sample_article.slug }}/">
+                        Read sample article <span>&rarr;</span>
+                    </a>
+                </section>
+            {% endif %}
+        {% else %}
+            <p class="section-page__intro">Latest intelligence and analysis for {{ region.name }}.</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock content %}

@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Y-SQRE delivers opportunity intelligence across geopolitics, econometrics, stocks and crypto.">
+    <title>{% block title %}Y-SQRE | Opportunity Intelligence{% endblock title %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'geopolitics/css/site.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="utility-bar">
+            <div class="shell utility-bar__inner">
+                <span>Sunday, May 31, 2026</span>
+                <div class="utility-links">
+                    <a href="#">Newsletters</a>
+                    <a href="#">Sign in</a>
+                    <a class="subscribe-link" href="#">Subscribe</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="shell masthead">
+            <a class="brand" href="/" aria-label="Y-SQRE home">
+                <span class="brand-mark">Y</span>
+                <span class="brand-name">SQRE</span>
+            </a>
+            <span class="brand-tagline">Opportunity Intelligence</span>
+            <button class="menu-button" type="button" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+            <button class="search-button" type="button" aria-label="Search">
+                <span class="search-icon"></span>
+                <span>Search</span>
+            </button>
+        </div>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+            <div class="shell primary-nav__inner">
+                <div class="nav-dropdown">
+                    <a class="nav-dropdown__trigger" href="/geopolitics/">Geopolitics <span aria-hidden="true">&#9662;</span></a>
+                    <div class="nav-dropdown__menu" aria-label="Geopolitics regions">
+                        <a href="/geopolitics/north-america/">North America</a>
+                        <a href="/geopolitics/europe/">Europe</a>
+                        <a href="/geopolitics/asia/">Asia</a>
+                        <a href="/geopolitics/asean/">ASEAN</a>
+                        <a href="/geopolitics/pacific/">Pacific</a>
+                    </div>
+                </div>
+                <a href="#">Econometrics</a>
+                <a href="#">Stocks</a>
+                <a href="#">Crypto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock content %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell footer-grid">
+            <div>
+                <a class="brand brand--footer" href="/">
+                    <span class="brand-mark">Y</span>
+                    <span class="brand-name">SQRE</span>
+                </a>
+                <p>Independent intelligence for a changing world.</p>
+            </div>
+            <div>
+                <h3>Explore</h3>
+                <a href="#">Latest</a>
+                <a href="#">Geopolitics</a>
+                <a href="#">Econometrics</a>
+            </div>
+            <div>
+                <h3>About</h3>
+                <a href="#">Our newsroom</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+            </div>
+            <div class="footer-newsletter">
+                <h3>The Daily Square</h3>
+                <p>A concise briefing for the opportunities shaping tomorrow.</p>
+                <a class="button button--light" href="#">Join newsletter</a>
+            </div>
+        </div>
+        <div class="shell footer-bottom">
+            <span>&copy; 2026 Y-SQRE Intelligence</span>
+            <span>Built for informed decisions</span>
+        </div>
+    </footer>
+</body>
+</html>
